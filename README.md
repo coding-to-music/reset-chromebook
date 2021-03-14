@@ -22,6 +22,48 @@
 [TOC]
 
 
+# March 2021 reset linux in chromebook, this is what I did:
+
+``` Javascript
+// back up the following directories
+- .ssh
+- .gitconfig
+- .bash_history
+- .bash_alias
+
+// Reset the chromebook in the Chromebook settings
+
+Restore the following directories and files
+- .ssh
+- .gitconfig
+- .bash_history
+- .bash_alias
+
+// download the vscode deb file from here: 
+// https://code.visualstudio.com/Download
+
+// Unzip / untar / remove from deb packaging
+
+    8  sudo apt install code_1.54.2-1615424848_amd64.deb
+
+
+    9  sudo dpkg -i code_1.54.2-1615424848_amd64.deb
+
+   10  sudo apt update
+   11  apt list --upgradable
+   12  sudo apt upgrade
+   13  apt --fix-broken install
+   14  sudo apt --fix-broken install
+   15  sudo apt upgrade
+   16  ll
+   17  sudo apt-get install -f
+   18  code --version
+   19  sudo apt-get install apt-transport-https
+   20  sudo apt install gnome-keyring
+   21  code 
+   22  mkdir ap
+
+```
 
 
 
