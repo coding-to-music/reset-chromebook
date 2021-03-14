@@ -108,6 +108,7 @@ sudo docker run hello-world
 - vscode and extensions, 
 - Sphinx and needed extensions, 
 - clone key repos, 
+- DigitalOcean docutil for command line droplet creation
 - mount drive
 
 ```
