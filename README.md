@@ -64,6 +64,23 @@ Restore the following directories and files
    22  mkdir ap
        apt list --installed
 
+In root
+
+Mkdir .ssh
+
+Chmod 700 .ssh
+
+Cd .ssh
+
+// Create SSH public and private keys
+// Store them here
+// or copy them from backup
+Chmod 600 each_private_key # the ones not with .pub suffix
+
+
+
+
+
 ```
 
 
