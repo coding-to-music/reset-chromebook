@@ -77,9 +77,38 @@ Cd .ssh
 // or copy them from backup
 Chmod 600 each_private_key # the ones not with .pub suffix
 
+// This is how to upgrade vscode to the latest version on Debian
+   sudo apt-get install --only-upgrade code
 
+// verify can SSH to DigitalOcean droplet - change the ip_address in the vscode SSH configuration file
+   ssh -vvv root@206.189.202.21
 
+// Install Docker
+// https://docs.docker.com/engine/install/debian/
 
+ 1939  sudo apt-get update
+ 1940  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+ 1941  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 1942  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1943  sudo apt-get update
+ 1944  sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+// validate the install is working correctly
+sudo docker run hello-world
+
+// Next Steps
+
+- Use Vagrant
+- Create an image on DigitalOcean that has everything I already need
+- Docker, 
+- Github, 
+- .ssh, 
+- .bash_aliases
+- vscode and extensions, 
+- Sphinx and needed extensions, 
+- clone key repos, 
+- mount drive
 
 ```
 
