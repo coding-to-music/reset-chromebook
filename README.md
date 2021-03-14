@@ -62,6 +62,7 @@ Restore the following directories and files
    20  sudo apt install gnome-keyring
    21  code 
    22  mkdir ap
+       apt list --installed
 
 ```
 
