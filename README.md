@@ -94,6 +94,23 @@ Chmod 600 each_private_key # the ones not with .pub suffix
  1943  sudo apt-get update
  1944  sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+// after exiting linux and logging in again, needed to do these 
+
+// install pip and pip3
+ 1991  sudo apt update
+ 1993  sudo apt install python3-pip
+ 1994  pip --version
+ 1995  sudo apt install python-pip
+ 1996  pip --version
+ 1997  pip3 --version
+
+// add myself into the docker group, as per https://docs.docker.com/engine/install/linux-postinstall/
+ 2000  sudo usermod -aG docker $USER
+
+// This finally let me run docker as myself
+
+sudo chmod 666 /var/run/docker.sock
+
 // validate the install is working correctly
 sudo docker run hello-world
 
